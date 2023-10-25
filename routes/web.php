@@ -32,3 +32,19 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/aparelhos', function () {
+    $vetor = App\Models\Aparelho::all();
+     return view('aparelhos.index',compact('vetor'));
+ })->name('aparelhos');
+
+ Route::get('/clientes', function () {
+    $vetor = App\Models\Clientes::all();
+    return view('clientes.index',compact('vetor'));
+ })->name('clientes');
+
+ Route::get('/servicos', function () {
+    $vetor = App\Models\Servico::all();
+    return view('servicos.index',compact('vetor'));
+ })->name('servicos');
