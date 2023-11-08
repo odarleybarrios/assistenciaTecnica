@@ -8,9 +8,9 @@
     @foreach ($vetor as $servico)
 
     <p>
-        {!!$servico->PecasSubstituidas!!}<br>
-        {{$servico->valor}}<br>
-        {{$servico->DataEntrega}}
+     Peças substituidas &nbsp;{!!$servico->PecasSubstituidas!!}<br>
+     Valor &nbsp;{{$servico->valor}}<br>
+     Data de entrega &nbsp;{{$servico->DataEntrega}}
     </p>
 
     @endforeach
