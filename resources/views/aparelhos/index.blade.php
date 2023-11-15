@@ -8,7 +8,7 @@
     @foreach ($vetor as $aparelho)
 
     <p>
-        {{$aparelho->tipo}}
+        {{$aparelho->Tipo}}
     </p>
 
     @endforeach

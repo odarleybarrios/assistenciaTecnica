@@ -8,7 +8,7 @@
     @foreach ($vetor as $cliente)
 
     <p>
-        {{$cliente->nome}}
+        {{$cliente->Nome}}
     </p>
 
     @endforeach

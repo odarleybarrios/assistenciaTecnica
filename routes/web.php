@@ -40,7 +40,7 @@ Route::get('/aparelhos', function () {
  })->name('aparelhos');
 
  Route::get('/clientes', function () {
-    $vetor = App\Models\Clientes::all();
+    $vetor = App\Models\Cliente::all();
     return view('clientes.index',compact('vetor'));
  })->name('clientes');
 
